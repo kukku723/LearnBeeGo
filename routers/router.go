@@ -1,10 +1,11 @@
 package routers
 
 import (
-	"hello/controllers"
+	"LearnBeeGo/controllers"
 	"github.com/astaxie/beego"
 )
 
 func init() {
     beego.Router("/", &controllers.MainController{})
+	beego.Router("/comment", &controllers.Comment{})
 }

@@ -1,7 +1,11 @@
 package main
 
 import (
+	_ "LearnBeeGo/routers"
+	_ "LearnBeeGo/models"
 	"github.com/astaxie/beego"
+
+
 )
 
 type MainController struct {
