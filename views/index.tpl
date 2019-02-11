@@ -76,6 +76,8 @@
 <body>
   <header>
     <h1 class="logo">Welcome to Beego</h1>
+   <input type="button" onclick="location.href='./comment'" value="遷移">
+   <a href="./comment">遷移</a>
     <div class="description">
       Beego is a simple & powerful Go web framework which is inspired by tornado and sinatra.
     </div>
@@ -89,7 +91,6 @@
     </div>
   </footer>
   <div class="backdrop"></div>
-
   <script src="/static/js/reload.min.js"></script>
 </body>
 </html>

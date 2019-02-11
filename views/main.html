@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
-
-
+<form action="/comment" method="post">
+    <div class="form-group">
+        <label>タイトル</label>
+        <input name="title" class="form-control" placeholder="タイトル">
+    </div>
+    <div class="form-group">
+        <label>内容</label>
+        <textarea name="body" class="form-control" rows="3" placeholder="書き込む内容"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">送信</button>
+</form>
+<button class="btn btn-primary" onclick="history.back()">back</button>
 </body>
 </html>

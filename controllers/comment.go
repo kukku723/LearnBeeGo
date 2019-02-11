@@ -12,11 +12,15 @@ type Comment struct {
 }
 
 func (c *Comment) Get() {
+	c.TplName="main.html"
+}
+func (c *Comment) Post() {
 	reslt:=orm.NewOrm()
 	commet:=models.Comment{
-		Name:"test",
-		Message:"testMessage",
+		Name:c.GetString("title"),
+		Message:"body",
 	}
 	_,err:=reslt.Insert(&commet)
 	fmt.Print(err)
+	c.TplName="main.html"
 }
